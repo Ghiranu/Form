@@ -1,0 +1,50 @@
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #eaeaea;
+    padding: 20px;
+    margin: auto;
+    width: 900px;
+    height: 500px;
+    border-radius: 4px;
+ }
+
+ .form-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 2px solid #333;
+     padding: 15px;
+     border-radius: 4px;
+ }
+
+ .flex-item-1 {
+     padding: 20px;
+
+ }
+
+ .flex-item-2 img {
+     width: 400px;
+ }
+
+ .flex-item-1 input {
+     margin-bottom: 20px;
+ }
+
+ .flex-item-1 .gender {
+     margin-left: 50px;
+     margin-top: 10px;
+ }
+
+ .flex-item-1 .submit {
+     padding: 10px;
+     margin-left: 313px;
+     margin-top: 20px;
+     color: white;
+     background-color:  #00a3e1;
+     border-radius: 4px;
+ }
+
+ 
+
