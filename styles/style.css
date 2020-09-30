@@ -48,3 +48,24 @@
 
  
 
+ .invalid {
+     border-color: red;
+ }
+
+ .valid-message {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     background-color: #aeecae;
+     width: 922px;
+     margin: 10px auto;
+     padding: 10px;
+     visibility: hidden;
+ }
+
+ .valid-message span {
+     flex-grow: 2;
+     margin-left: 6px;
+ }
+
+ 
