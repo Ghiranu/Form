@@ -37,16 +37,24 @@
      margin-top: 10px;
  }
 
- .flex-item-1 .submit {
+ .flex-item-1 #textarea {
+     margin-bottom: 20px;
+ }
+
+ .submit {
      padding: 10px;
-     margin-left: 313px;
-     margin-top: 20px;
+     margin-left: 685px;
+     position: relative;
+     bottom: 120px;
+     z-index: 1;
      color: white;
      background-color:  #00a3e1;
      border-radius: 4px;
  }
 
- 
+ .valid {
+     border-color: #00cc00;
+ }
 
  .invalid {
      border-color: red;

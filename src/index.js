@@ -1,35 +1,36 @@
+var firstInput = document.getElementById("first-input");
+var secondInput = document.getElementById("second-input");
+var textAreaInput = document.getElementById("textarea");
+var maleBtn = document.getElementById("male");
+var femaleBtn = document.getElementById("female");
+
 document.querySelector(".submit").addEventListener("click", function displayBorder(event) {
     var elements = document.getElementsByClassName("border");
   
     for(i=0; i<elements.length; i++) {
       if (elements[i].value === "" ) {
           elements[i].classList.add("invalid");
-          event.preventDefault();
-      } else { 
-          elements[i].classList.remove("invalid");
+      } else if (elements[i].value !== "") { 
+          elements[i].classList.replace("invalid", "valid");
           
-        }
-      };
-      
-  });
-
-
- var showMessage = function () {
-        setTimeout(function(){ 
+        } else if (elements[i].value !== "") {
           document.querySelector(".valid-message").style.visibility = "visible";
-          var message = document.getElementById("text");
-          var firstInput = document.getElementById("first-input");
+          document.getElementById("text").innerText += document.getElementById("first-input").value;
+        } else {
 
-          message.innerText += firstInput.value;
+        };
+        }
+      if (elements[0].classList.contains("valid") && elements[1].classList.contains("valid") && elements[2].classList.contains("valid") ) {
+              document.querySelector(".valid-message").style.visibility = "visible";
+              document.getElementById("text").innerText += document.getElementById("first-input").value;
+      }
 
-          
-          
+      console.log ("First Name: " + firstInput.value + ", " + "Last Name: " + secondInput.value + ", " + "Message: " + textAreaInput.value + ", " + "Gender: " + maleBtn.value);
 
-        }, 1000);
- };
-   
+      });
 
-
+      
+      
 var closeMessage = document.getElementById("close");
 
 closeMessage.addEventListener("click", function () {
@@ -40,7 +41,7 @@ closeMessage.addEventListener("click", function () {
 
 
   
-  
+
    
  
   

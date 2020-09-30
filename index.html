@@ -20,29 +20,29 @@
                 <input type="text" size="54" class="border" id="first-input" placeholder="First Name"  >
                 </div>
                 <div>
-                    <input type="text" size="54" class ="border" placeholder="Last Name" >
+                    <input type="text" size="54" class ="border"  id="second-input" placeholder="Last Name" >
                 </div>
             <div>
                 Gender
                 <div class="gender">
-                <input type="radio" id="male" name="gender" required >
+                <input type="radio" id="male" name="gender" value="Male" >
                 <label for="male">M</label>
             </div>
             <div class="gender">
-                <input type="radio" id="female" name="gender" required>
+                <input type="radio" id="female" name="gender" value="Female" >
                 <label for="female">F</label>
             </div>
             </div>
-                <textarea id="border" class="border" placeholder="Your message here..." cols="50" rows="7" ></textarea>
-                <div>
-                    <button class="submit">Submit</button>
-                    
-                </div>
+                <textarea id="textarea" class="border" placeholder="Your message here..." cols="50" rows="7" ></textarea>
+                
             </div>
             <div class="flex-item flex-item-2">
                 <img src="form.png" alt="">
             </div>
         </form>
+    </div>
+    <div>
+        <button class="submit">Submit</button>
     </div>
 <script src="./src/index.js"></script>
 </body>
